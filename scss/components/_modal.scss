@@ -20,6 +20,10 @@
     max-width: 500px;
     padding: 10px 30px;
   }
+  @media screen and (max-width: 480px) {
+    max-width: 400px;
+    padding: 10px 20px;
+  }
   &__close {
     position: absolute;
     right: 10px;
@@ -75,6 +79,7 @@
     p {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       gap: 5px;
       margin-top: 20px;
       input {
