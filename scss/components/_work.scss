@@ -1,0 +1,14 @@
+.work {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  &__list {
+    @include grid;
+  }
+  &__item {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

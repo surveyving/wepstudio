@@ -1,0 +1,149 @@
+header {
+  border-bottom: 1px solid #ececec;
+}
+.menu {
+  display: flex;
+  padding: 25px 0;
+  align-items: center;
+  @media screen and (max-width: 480px) {
+    justify-content: space-between;
+  }
+  &__logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    text-shadow: 2px 2px 2px #686868;
+    color: #000;
+    span {
+      text-shadow: 0 8px 8px 8px rgba(25, 134, 178, 0.25);
+      color: #2196f3;
+    }
+  }
+  &__item {
+    a {
+      font-family: "Roboto";
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+      color: #212121;
+      &:hover {
+        color: #2196f3;
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 40px;
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+
+    align-items: center;
+    gap: 50px;
+    margin-left: auto;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: "Roboto";
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+      color: #757575;
+      @media screen and (max-width: 480px) {
+        font-size: 24px;
+      }
+      &:hover {
+        color: #2196f3;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 93px;
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+}
+
+.menu__link:hover .menu__icon {
+  fill: #2196f3;
+  color: #2196f3;
+}
+.menu__icon:hover .menu__link {
+  fill: #2196f3;
+  color: #2196f3;
+}
+
+.burger {
+  display: none;
+  @media screen and (max-width: 480px) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 48px 40px;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    z-index: 100;
+    background-color: #fff;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 0;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: "Roboto";
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+      color: #757575;
+    }
+  }
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    color: #212121;
+    &:focus {
+      color: #2196f3;
+    }
+  }
+}
+.burger-btn {
+  display: none;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+}
+
+.show {
+  display: none;
+}
